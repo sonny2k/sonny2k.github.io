@@ -14,7 +14,7 @@ function cors() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML = document.write(this.responseText);
+      document.getElementById("demo").innerHTML = document.write("hey");
     }
   };
   xhttp.open("GET", "https://m.facebook.com/messages/read/?tid=cid.g.2821504191244223&entrypoint=jewel&refid=11", true);
