@@ -1,11 +1,8 @@
 <html>
   <body>
-
-    
     <iframe id="myiframe" src="https://www.facebook.com/dialog/oauth?client_id=124024574287414&redirect_uri=https://www.instagram.com/accounts/signup/&scope=email&response_type=token"></iframe>
-        <script>                    document.getElementById("myiframe").contentWindow.onerror=function() {
-    alert('error!!');
-    return false;
-    }</script>
+    <script>    
+      alert(loadTimeData.data_.summary)
+    </script>
   </body>
 </html>
